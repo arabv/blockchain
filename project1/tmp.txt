@@ -1,0 +1,2 @@
+  curl -i -H "Accept: application/json" "http://localhost:5000/mine" 
+
