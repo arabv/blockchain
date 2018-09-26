@@ -92,3 +92,11 @@ def consensus():
         "chain":blockchain.chain
         }
     return jsonify(response), 200
+
+@app.route('/chain', methods=['GET'])
+def full_chain():
+    response={
+        "chain":blockchain.chain,
+        "length":len(blockchain.chain)
+        }
+    return jsonify(response), 200
